@@ -1,0 +1,307 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.lnwazg</groupId>
+	<artifactId>kit</artifactId>
+	<version>0.1</version>
+	<packaging>jar</packaging>
+
+	<name>kit</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<jdk.version>1.8</jdk.version>
+		<charset.encoding>UTF-8</charset.encoding>
+		<servlet.version>3.0.1</servlet.version>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>nexus-aliyun</id>
+			<url>http://maven.aliyun.com/nexus/content/groups/public</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<!-- commons库 -->
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.5</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.4</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>1.10</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-exec</artifactId>
+			<version>1.3</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>1.9.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-compress</artifactId>
+			<version>1.10</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-email</artifactId>
+			<version>1.4</version>
+		</dependency>
+		<!-- gson -->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.8.0</version>
+		</dependency>
+		<!-- 定时器 -->
+		<dependency>
+			<groupId>org.quartz-scheduler</groupId>
+			<artifactId>quartz</artifactId>
+			<version>2.2.3</version>
+		</dependency>
+		<!-- 动态代理 -->
+		<dependency>
+			<groupId>cglib</groupId>
+			<artifactId>cglib</artifactId>
+			<version>3.2.5</version>
+		</dependency>
+		<!-- 字符集探测工具，用到的概率较大 -->
+		<dependency>
+			<groupId>com.xiongyingqi</groupId>
+			<artifactId>commons-file</artifactId>
+			<version>0.1.10</version>
+		</dependency>
+
+
+		<!-- 以下是较为冷门的jar包，那么必须要加上optional true的标识 -->
+		<!-- 较冷门使用的jar包需要加上optional true的标识，避免全局打入导致jar包臃肿 -->
+		<!-- pdf输出工具 -->
+		<dependency>
+			<groupId>com.lowagie</groupId>
+			<artifactId>itext</artifactId>
+			<version>4.2.2</version>
+			<optional>true</optional>
+		</dependency>
+
+		<!-- httpclient,已经基本被kit的httpUtils替代 -->
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.3.1</version>
+			<optional>true</optional>
+		</dependency>
+
+		<!-- mp3播放工具 -->
+		<dependency>
+			<groupId>javazoom</groupId>
+			<artifactId>jlayer</artifactId>
+			<version>1.0.1</version>
+			<optional>true</optional>
+		</dependency>
+
+		<!-- jetty组件 -->
+		<dependency>
+			<groupId>org.eclipse.jetty</groupId>
+			<artifactId>jetty-server</artifactId>
+			<version>9.3.9.M1</version>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.jetty</groupId>
+			<artifactId>jetty-webapp</artifactId>
+			<version>9.3.9.M1</version>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.jetty</groupId>
+			<artifactId>jetty-util</artifactId>
+			<version>9.3.9.M1</version>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.jetty</groupId>
+			<artifactId>jetty-http</artifactId>
+			<version>9.3.9.M1</version>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.jetty</groupId>
+			<artifactId>jetty-servlets</artifactId>
+			<version>9.3.9.M1</version>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.jetty</groupId>
+			<artifactId>jetty-io</artifactId>
+			<version>9.3.9.M1</version>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.jetty</groupId>
+			<artifactId>jetty-security</artifactId>
+			<version>9.3.9.M1</version>
+			<optional>true</optional>
+		</dependency>
+
+		<!-- 全局快捷键绑定 -->
+		<dependency>
+			<groupId>com.melloware</groupId>
+			<artifactId>jintellitype</artifactId>
+			<version>1.3.9</version>
+			<optional>true</optional>
+		</dependency>
+
+		<!-- ehcache缓存，jar包巨大，达到了8M多，并且也并不是每个项目都会用到 -->
+		<dependency>
+			<groupId>net.sf.ehcache</groupId>
+			<artifactId>ehcache</artifactId>
+			<version>2.10.3</version>
+			<optional>true</optional>
+		</dependency>
+
+		<!-- 二维码工具 -->
+		<dependency>
+			<groupId>com.google.zxing</groupId>
+			<artifactId>core</artifactId>
+			<version>3.2.1</version>
+			<optional>true</optional>
+		</dependency>
+
+		<!-- excel导出 -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.13</version>
+			<optional>true</optional>
+		</dependency>
+		<!-- 发邮件的 -->
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.4.7</version>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>${servlet.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<!-- 对象与xml转换工具 -->
+		<dependency>
+			<groupId>com.thoughtworks.xstream</groupId>
+			<artifactId>xstream</artifactId>
+			<version>1.4.7</version>
+			<optional>true</optional>
+		</dependency>
+		<!-- 超强的xml解析工具 -->
+		<dependency>
+		    <groupId>com.jcabi</groupId>
+		    <artifactId>jcabi-xml</artifactId>
+		    <version>0.19</version>
+		    <optional>true</optional>
+		</dependency>
+		<!-- 字符串模板工具，一般仅在webapp内才可能用到，当然少数的复杂模板替换也可以使用之 -->
+		<dependency>
+			<groupId>org.freemarker</groupId>
+			<artifactId>freemarker</artifactId>
+			<version>2.3.25-incubating</version>
+			<optional>true</optional>
+		</dependency>
+		<!-- protostuff序列化工具，并不是必定会被用到的 -->
+		<dependency>
+			<groupId>io.protostuff</groupId>
+			<artifactId>protostuff-core</artifactId>
+			<version>1.5.2</version>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>io.protostuff</groupId>
+			<artifactId>protostuff-runtime</artifactId>
+			<version>1.5.2</version>
+			<optional>true</optional>
+		</dependency>
+
+		<!-- hutool工具类，用到的时候再引入即可。相机会将其融入到kit中 -->
+<!-- 		<dependency>
+			<groupId>com.xiaoleilu</groupId>
+			<artifactId>hutool-all</artifactId>
+			<version>3.0.3</version>
+			<optional>true</optional>
+		</dependency> -->
+
+		<!-- 反射工具包 -->
+		<dependency>
+			<groupId>org.reflections</groupId>
+			<artifactId>reflections</artifactId>
+			<version>0.9.11</version>
+			<optional>true</optional>
+		</dependency>
+		
+		<!-- 超强的反射调用工具类 -->
+		<!-- 		
+		<dependency>
+			<groupId>org.jooq</groupId>
+			<artifactId>joor</artifactId>
+			<version>0.9.6</version>
+			<optional>true</optional>
+		</dependency> -->
+		
+		<!-- 超强的自动化发布工具 -->
+		<dependency>
+			<groupId>XStudio</groupId>
+			<artifactId>JavaExpectX</artifactId>
+			<version>1.0</version>
+			<optional>true</optional>
+		</dependency>		
+	</dependencies>
+	<build>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<includes>
+					<include>**/*</include>
+				</includes>
+				<filtering>false</filtering>
+			</resource>
+			<resource>
+				<directory>src/main/java</directory>
+				<includes>
+					<include>**/*</include>
+				</includes>
+				<filtering>false</filtering>
+			</resource>
+		</resources>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.3</version>
+				<configuration>
+					<source>${jdk.version}</source>
+					<target>${jdk.version}</target>
+					<encoding>${charset.encoding}</encoding>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<description>最后希望【领域无关的工具类，就是我的胜利希望！一架All-In-One的航空母舰！】</description>
+</project>

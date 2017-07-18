@@ -1,0 +1,77 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.lnwazg</groupId>
+	<artifactId>myzoo-api</artifactId>
+	<version>0.1</version>
+	<packaging>jar</packaging>
+
+	<name>myzoo-api</name>
+	<url>http://maven.apache.org</url>
+
+	<repositories>
+		<repository>
+			<id>clojars</id>
+			<url>http://clojars.org/repo/</url>
+		</repository>
+		<repository>
+			<id>nexus-aliyun</id>
+			<url>http://maven.aliyun.com/nexus/content/groups/public</url>
+		</repository>
+	</repositories>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<jdk.version>1.8</jdk.version>
+		<charset.encoding>UTF-8</charset.encoding>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>com.lnwazg</groupId>
+			<artifactId>kit</artifactId>
+			<version>0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.esotericsoftware</groupId>
+			<artifactId>kryonet</artifactId>
+			<version>2.22.0-RC1</version>
+		</dependency>
+		<!-- 该数据库的驱动由实现方提供 -->
+		<dependency>
+			<groupId>com.lnwazg</groupId>
+			<artifactId>dbkit</artifactId>
+			<version>0.1</version>
+			<optional>true</optional>
+		</dependency>	
+	</dependencies>
+	<build>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<includes>
+					<include>**/*</include>
+				</includes>
+				<filtering>false</filtering>
+			</resource>
+			<resource>
+				<directory>src/main/java</directory>
+				<includes>
+					<include>**/*</include>
+				</includes>
+				<filtering>false</filtering>
+			</resource>
+		</resources>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.3</version>
+				<configuration>
+					<source>${jdk.version}</source>
+					<target>${jdk.version}</target>
+					<encoding>${charset.encoding}</encoding>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<description>my zookeeper api</description>
+</project>

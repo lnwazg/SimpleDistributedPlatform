@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HardLayoutPane>
+<JPanel layout="BoxLayout|X_AXIS" border="TitledBorder|状态">
+	<horizontalStrut>10</horizontalStrut>
+	<JLabel>状态：</JLabel>
+	<horizontalStrut>5</horizontalStrut>
+	<JLabel id="status">待机中</JLabel>
+	<horizontalGlue></horizontalGlue>
+</JPanel>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Container>
+<Container layout="BoxLayout|X_AXIS" title="DataNode" pack="true" resizable="true" iconImage="icons/icon.png" minToTray="icons/icon.png|工人节点">
+	<JPanel layout="BoxLayout|Y_AXIS">
+		<JPanel layout="BoxLayout|Y_AXIS" border="TitledBorder|实时日志">
+			<JScrollPane preferredSize="300,280" border="CompoundBorder|0,2,0,2" horizontalScrollBarPolicy="HORIZONTAL_SCROLLBAR_NEVER" verticalScrollBarPolicy="VERTICAL_SCROLLBAR_AS_NEEDED">
+				<JTextPane id="logScreen" background="black" caretColor="white" foreground="white" editable="false" />
+			</JScrollPane>
+		</JPanel>
+		<JPanel layout="BoxLayout|X_AXIS" border="TitledBorder|服务状态">
+			<horizontalStrut>10</horizontalStrut>
+			<JLabel>状态：</JLabel>
+			<horizontalStrut>5</horizontalStrut>
+			<JLabel id="statusLabel">ready</JLabel>
+			<horizontalGlue></horizontalGlue>
+		</JPanel>
+	</JPanel>
+</Container>

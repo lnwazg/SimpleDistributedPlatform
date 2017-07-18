@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="config"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/DataNode"/>
+	<classpathentry kind="lib" path="D:/maven/repo/m2/commons-io/commons-io/2.5/commons-io-2.5.jar"/>
+	<classpathentry kind="lib" path="E:/2012/mavenPrj/vipcard/target/lib/activation-1.1.1.jar"/>
+	<classpathentry kind="lib" path="E:/2012/mavenPrj/vipcard/target/lib/ant-1.9.6.jar"/>
+	<classpathentry kind="lib" path="E:/2012/mavenPrj/vipcard/target/lib/ant-launcher-1.9.6.jar"/>
+	<classpathentry kind="lib" path="E:/2012/mavenPrj/vipcard/target/lib/antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="E:/2012/mavenPrj/vipcard/target/lib/antlr-3.5.jar"/>
+	<classpathentry kind="lib" path="E:/2012/mavenPrj/vipcard/target/lib/antlr-runtime-3.5.jar"/>
+	<classpathentry kind="lib" path="E:/2012/mavenPrj/vipcard/target/lib/asm-5.2.jar"/>
+	<classpathentry kind="lib" path="E:/2012/mavenPrj/vipcard/target/lib/c3p0-0.9.1.1.jar"/>
+	<classpathentry kind="lib" path="E:/2012/mavenPrj/vipcard/target/lib/cglib-3.2.5.jar"/>
+	<classpathentry kind="lib" path="E:/2012/mavenPrj/vipcard/target/lib/commons-beanutils-1.9.2.jar"/>
+	<classpathentry kind="lib" path="E:/2012/mavenPrj/vipcard/target/lib/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="E:/2012/mavenPrj/vipcard/target/lib/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="E:/2012/mavenPrj/vipcard/target/lib/commons-compress-1.10.jar"/>
+	<classpathentry kind="lib" path="E:/2012/mavenPrj/vipcard/target/lib/commons-email-1.4.jar"/>
+	<classpathentry kind="lib" path="E:/2012/mavenPrj/vipcard/target/lib/commons-exec-1.3.jar"/>
+	<classpathentry kind="lib" path="E:/2012/mavenPrj/vipcard/target/lib/commons-file-0.1.10.jar"/>
+	<classpathentry kind="lib" path="E:/2012/mavenPrj/vipcard/target/lib/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="E:/2012/mavenPrj/vipcard/target/lib/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="E:/2012/mavenPrj/vipcard/target/lib/commons-lang3-3.5.jar"/>
+	<classpathentry kind="lib" path="E:/2012/mavenPrj/vipcard/target/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="E:/2012/mavenPrj/vipcard/target/lib/dbkit-0.1.jar"/>
+	<classpathentry kind="lib" path="E:/2012/mavenPrj/vipcard/target/lib/freemarker-2.3.25-incubating.jar"/>
+	<classpathentry kind="lib" path="E:/2012/mavenPrj/vipcard/target/lib/gson-2.8.0.jar"/>
+	<classpathentry kind="lib" path="E:/2012/mavenPrj/vipcard/target/lib/HikariCP-2.6.1.jar"/>
+	<classpathentry kind="lib" path="E:/2012/mavenPrj/vipcard/target/lib/httpkit-1.0.2.jar"/>
+	<classpathentry kind="lib" path="E:/2012/mavenPrj/vipcard/target/lib/javax.mail-1.5.2.jar"/>
+	<classpathentry kind="lib" path="E:/2012/mavenPrj/vipcard/target/lib/jchardet-1.0.jar"/>
+	<classpathentry kind="lib" path="E:/2012/mavenPrj/vipcard/target/lib/mysql-connector-java-5.1.39.jar"/>
+	<classpathentry kind="lib" path="E:/2012/mavenPrj/vipcard/target/lib/quartz-2.2.3.jar"/>
+	<classpathentry kind="lib" path="E:/2012/mavenPrj/vipcard/target/lib/slf4j-api-1.7.22.jar"/>
+	<classpathentry kind="lib" path="E:/2012/mavenPrj/vipcard/target/lib/ST4-4.0.7.jar"/>
+	<classpathentry kind="lib" path="E:/2012/mavenPrj/vipcard/target/lib/stringtemplate-3.2.1.jar"/>
+	<classpathentry kind="lib" path="E:/2012/mavenPrj/vipcard/target/lib/xmlpull-1.1.3.1.jar"/>
+	<classpathentry kind="lib" path="E:/2012/mavenPrj/vipcard/target/lib/xpp3_min-1.1.4c.jar"/>
+	<classpathentry kind="lib" path="E:/2012/mavenPrj/vipcard/target/lib/xstream-1.4.7.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/kit"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
