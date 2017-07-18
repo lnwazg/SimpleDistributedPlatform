@@ -1,8 +1,9 @@
 # SimpleDistributedPlatform
 A very simple distributed computing platform, based on mq and naming service
 
-QQ：  914096874  
-email:  lnwazg@126.com  
+email:  lnwazg@126.com
+QQ：  914096874    
+QQ Group: 304153330
 
 
 ## 一:平台效果：
@@ -35,7 +36,6 @@ MQ
 每个Task任务都需要继承自DistributedTask类，实现指定的方法：  
 
 ```
-
 package com.lnwazg;
 
 import java.util.List;
@@ -246,8 +246,8 @@ DataNode上线时，向MQ发送一条DataNode上线的消息，NameNode监听该
 1. 本地配置host ：127.0.0.1    myzoo.lnwazg.com
 2. 启动MY_ZOO_SERVER-1.1.jar  服务注册与发现服务器  
 3. 启动MQ_SERVER-1.1.jar      MQ服务器
-4. 启动NameNode-1.1.jar
-5. 启动DataNode-1.1.jar
+4. 启动NameNode-1.1.jar       指挥官节点
+5. 启动DataNode-1.1.jar   	 工人节点，可以启动多个
 6. 在NameNode-1.1.jar的界面中点击“上传任务jar包并执行”提交分布式计算jar包
 
 备注：
