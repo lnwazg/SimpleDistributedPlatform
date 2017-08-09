@@ -18,7 +18,7 @@ QQ Group: 304153330
 MyZooKeeper  基于Swing实现的Naming Service 服务注册与发现管理器  
 ![xxx](_screenshots/3.png)
 
-MQ  
+4. MQ  
 基于Swing实现的轻量级MQ（仅提供点对点模式）  
 ![xxx](_screenshots/4.png)
 
