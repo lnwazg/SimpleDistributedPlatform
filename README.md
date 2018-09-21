@@ -1,10 +1,6 @@
 # SimpleDistributedPlatform
 A very simple distributed computing platform, based on mq and naming service
 
-Email:  lnwazg@126.com  
-QQ：  914096874      
-QQ Group: 304153330  
-
 
 ## 一:平台效果：
 
